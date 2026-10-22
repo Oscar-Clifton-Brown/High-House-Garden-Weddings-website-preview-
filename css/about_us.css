@@ -1,0 +1,196 @@
+.aboutus-grid-container{ /*grid*/
+    display: grid;
+    margin:16px;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 711px 
+} 
+.aboutus-grid-text-container{
+    position: relative;
+    background-color: #f0f0f0;
+}
+.aboutus-grid-text-container .t1{
+    position:relative;
+    margin:0;
+    font-size:26.7px;
+    line-height: 45px;
+    text-align: center;
+    padding:86px 63px 0 63px; 
+    font-family: 'Gotham-light';
+}
+.aboutus-grid-text-container .t1:nth-child(2){
+    padding-top:42px;
+}
+.aboutus-grid-container img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aboutus-flex{
+    display: grid;
+    width: calc(100%-32px);
+    margin:28px 16px;
+    grid-gap:16px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows:562px;
+}
+.aboutus-flex img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.aboutus-flex-text-container{
+    background-color: #f0f0f0;
+    width: 100%;
+    position:relative;
+}
+.aboutus-flex-text-container .t1{
+    position:absolute;
+    margin:0;
+    top:138px;
+    font-size:26.7px;
+    line-height: 45px;
+    text-align: center;
+    padding:0 66px; 
+    font-family: 'Gotham-light';
+}
+.aboutus-flex-text-container .button{
+    position:absolute;
+    top:465px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 1440px){
+    .aboutus-grid-container{ /*grid*/
+        grid-template-rows: 506px 
+    } 
+    .aboutus-grid-text-container .t1{
+        font-size:19px;
+        line-height: 32px;
+        padding:61px 45px 0 45px; 
+    }
+    .aboutus-grid-text-container .t1:nth-child(2){
+        padding-top:33px;
+    }
+    .aboutus-flex{
+        grid-template-rows:400px;
+    }
+    .aboutus-flex-text-container .t1{
+        top:100px;
+        font-size:19px;
+        line-height: 32px;
+        padding:0 50px; 
+    }
+    .aboutus-flex-text-container .button{
+        top:295px;
+        font-size:13px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .aboutus-grid-container{ /*grid*/
+        grid-template-rows: 380px 
+    } 
+    .aboutus-grid-text-container .t1{
+        font-size:14.3px;
+        line-height: 24px;
+        padding:45px 34px 0 34px; 
+    }
+    .aboutus-grid-text-container .t1:nth-child(2){
+        padding-top:25px;
+    }
+    .aboutus-flex{
+        grid-template-rows:300px;
+    }
+    .aboutus-flex-text-container .t1{
+        top:50px;
+        font-size:14.3px;
+        line-height: 24px;
+        padding:0 50px; 
+    }
+    .aboutus-flex-text-container .button{
+        top:250px;
+        font-size:9.8px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .aboutus-grid-container{ /*grid*/
+        grid-template-columns: minmax(0,1fr);
+        grid-template-rows: 748px 244px; /* */ 
+    } 
+    .aboutus-grid-container .item2{
+        grid-row: 1 / 2;
+    }
+    .aboutus-grid-container .item1{
+        grid-row: 2 / 3;
+    }
+    .aboutus-grid-text-container .t{
+        position:relative;
+        margin:0;
+        top:43px;
+        font-size:23.7px;
+        text-align: center;
+        font-family: 'SackersGothicStd-Light';
+    }
+    .aboutus-grid-text-container:after{
+        content:"";
+        width: calc(100% - 54px);
+        height: 2px;
+        background-color: #6A784D;
+        position:absolute;
+        display: block;
+        top: 87px;
+        left:50%;
+        transform: translate(-50%, -50%); 
+    }
+    .aboutus-grid-text-container .t1{
+        position: absolute;
+        top:114px;
+        padding: 0 32px;
+        font-size:20.5px;
+        line-height: 25px;
+    }
+    .aboutus-grid-text-container .t1:nth-child(2){
+        top:443px;
+    }
+    .aboutus-flex{
+        margin-top: 16px;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows:338px 244px;
+    }
+    
+    .aboutus-flex-text-container .t1{
+        top:50px;
+        font-size:20.5px;
+        line-height: 25px;
+        padding:0 32px; 
+    }
+    .aboutus-flex-text-container .button{
+        top:250px;
+        font-size:20.5px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .aboutus-grid-text-container .t1{
+        font-size:18px;
+    }
+    .aboutus-flex-text-container .t1{
+        font-size:18px; 
+    }
+    .aboutus-flex-text-container .button{
+        font-size:18px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .aboutus-grid-text-container .t1{
+        font-size:15px;
+    }
+    .aboutus-flex-text-container .t1{
+        font-size:15px; 
+    }
+    .aboutus-flex-text-container .button{
+        font-size:15px;
+        top:270px;
+    }
+}

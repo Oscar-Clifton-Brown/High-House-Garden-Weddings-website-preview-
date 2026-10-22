@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High House Garden Weddings</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="assets/favcon.svg">
+    <script src="jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <my-header></my-header>
+    <div class="header-img-container">
+        <img src="assets/photos/header.jpg" alt="collection of objects" class = 'header-img hide-mobile'>
+        <img src="assets/photos/togeter_next_to_lake.jpg" alt="collection of objects" class = 'header-img hide-desktop'>
+        <div id="title-wrapper1"></div>
+        <p class = "p1">High House Garden Weddings</p>
+        <p class = "p2">NORFOLK</p>
+    </div>
+
+    <div class="thirds-grid">
+        <img src="assets/photos/wall_in_backgruond.jpg" alt="the walled garden" class = "thirds-item-1" id = "img1">
+        <div class="text-container-centre titelized thirds-item-2" id = "txt1">
+            <div id="txt1_1-wrapper">
+                <p class="p1 text-in" id = "txt1_1">experience the magic of the walled garden at high house</p>
+            </div>
+            <div id="txt1_2-wrapper">
+                <a href="the_walled_garden" class="button non-button-button text-in" id = "txt1_2">the walled garden</a>
+            </div>
+        </div>
+
+        <div class="text-container-centre titelized thirds-item-3" id = "txt2">
+            <div id="txt2_1-wrapper">
+                <p class="p1 text-in" id = "txt2_1">acres of romance are exclusively yours</p>
+            </div>
+
+            <div id="txt2_2-wrapper">
+                <a href="the_venue" class="button non-button-button text-in" id = "txt2_2">the venue</a>
+            </div>
+
+        </div>
+        <img src="assets/photos/walking_with_wall.jpg" alt="the on site accomodation" class="thirds-item-4" id = "img2">
+
+        <img src="assets/photos/accommodation.jpg" alt="the walled garden" class = "thirds-item-5" id = "img3">
+        <div class="text-container-centre titelized thirds-item -6" id = "txt3">
+
+            <div id="txt3_1-wrapper">
+                <p class="p1 text-in" id = "txt3_1">our two restored cottages together host up to 15 guests</p>
+            </div>
+
+            <div id="txt3_2-wrapper">
+                <a href="accommodation" class="button non-button-button text-in" id = "txt3_2">accommodation</a>
+             </div>
+
+        </div>
+ 
+    </div>
+
+    <my-footer></my-footer>
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById("home").classList.add("this-page");
+        
+        function alignelements() {
+            do {
+                document.getElementById("img1").style.height = document.getElementById("txt1").clientHeight + "px"; 
+                document.getElementById("img2").style.height = document.getElementById("txt2").clientHeight + "px"; 
+                document.getElementById("img3").style.height = document.getElementById("txt3").clientHeight + "px"; 
+            }
+            while (document.getElementById("img1").style.height != document.getElementById("txt1").clientHeight + "px");
+        };
+        document.getElementById("img1").addEventListener("load",alignelements);
+        document.getElementById("img2").addEventListener("load",alignelements);
+        document.getElementById("img3").addEventListener("load",alignelements);
+        window.addEventListener("resize",alignelements);
+   </script>
+   <div style="display:none;">google7adf9524f982ff11.html</div>
+</body>
+</html>

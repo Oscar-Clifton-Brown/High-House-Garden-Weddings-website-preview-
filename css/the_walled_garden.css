@@ -1,0 +1,456 @@
+/*---------------------------- THE WALLED GARDEN ----------------------------*/
+
+.footer-upper-flex-container{
+    height:auto;
+}
+
+.thevenue-grid-text-container{
+    position: relative;
+    background-color: #F0F1ED;
+}
+.thevenue-grid-text-container .t1{
+    position:relative;
+    margin:0;
+    top:99px;
+    transform: translate(0, -50%);
+    font-size:36px;
+    text-align: center;
+    font-family: 'SackersGothicStd-Light';
+}
+.thevenue-grid-text-container:after{
+    content:"";
+    width: calc(100% - 190px);
+    height: 2px;
+    background-color: #6A784D;
+    position:absolute;
+    display: block;
+    margin:auto;
+    top:161px;
+    left:50%;
+    transform: translate(-50%, -50%); 
+}
+.thevenue-grid-text-container .t2{
+    position:absolute;
+    margin:0;
+    top:214px;
+    font-size:27px;
+    line-height: 45px;
+    text-align: center;
+    padding: 0 75px; 
+    font-family: 'Gotham-light';
+}
+.thevenue-grid-text-container-2{
+    position: relative;
+    background-color: #F0F1ED;
+}
+.thevenue-grid-text-container-2 .t3{
+    position:relative;
+    margin:0;
+    font-size:27px;
+    line-height: 45px;
+    text-align: center;
+    top:50%;
+    transform: translate(0, -50%);
+    padding:0 36px; 
+    font-family: 'Gotham-light';
+}
+
+
+
+.thevenue-grid-text-container-t3{
+    position: relative;
+    background-color: #F0F1ED;
+}
+.thevenue-grid-text-container-t3 .t3-container{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.thevenue-grid-text-container-t3 .t3{
+    margin:0;
+    font-size:27px;
+    line-height: 45px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 0 36px; 
+    font-family: 'Gotham-light';
+}
+.thevenue-grid-text-container-t3 .button{
+    top: 525px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.thevenue-grid-text-container-t3 .t3:nth-child(1){
+    margin-bottom: 50px;
+}
+
+
+
+.thevenue-grid-container-1{ /*grid*/
+    display: grid;
+    margin:16px;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 563px 563px;
+}
+.thevenue-grid-container-1 img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thevenue-grid-text-container .button{
+    font-family: 'SackersGothicStd-Light';
+    position:absolute;
+    top:476px;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+.thevenue-grid-container-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(0, 1fr)  minmax(0, 2fr);
+    grid-gap: 16px;
+}
+.thevenue-grid-container-2 img:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.thevenue-grid-container-3{ /*grid*/
+    display: grid;
+    margin:16px;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 608px 883px;
+}
+.thevenue-grid-container-3 img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thevenue-flex{
+    display: grid;
+    width: calc(100%-32px);
+    margin:20px 16px;
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows:607px;
+    grid-gap: 16px;
+}
+
+.thevenue-flex-text-container{
+    width: 100%;
+    height: 100%;
+}
+.thevenue-grid-text-container-3{
+    position:relative;
+    background-color: #F0F1ED;
+}
+.thevenue-grid-text-container-3 .t1{
+    position:absolute;
+    margin:0;
+    top:103px; 
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:36px;
+    width: fit-content;
+    font-family: 'SackersGothicStd-Heavy';
+}
+.thevenue-grid-text-container-3 .t2{
+    position:absolute;
+    margin:0;
+    top:221px; 
+    font-size:27px;
+    text-align: center;
+    padding: 0 194px; 
+    font-family: 'Gotham-light';
+}
+.thevenue-grid-text-container-3 .t3-container{
+    position: absolute;
+    width: fit-content;
+    left: 50%;
+    transform: translate(-50%,0);
+    margin:0;
+    top:380px; 
+    display: flex;
+}
+.thevenue-grid-text-container-3 .t3-container img{
+    position:relative;
+    width: 20.3px;
+    margin-right: 10px;
+}
+.thevenue-grid-text-container-3 .t3-container .t3{
+    position: relative  ;
+    font-size:23px;
+    font-family: 'Gotham-light';
+    color:#383838;
+    text-decoration: underline;
+}
+.mapouter{
+    position:relative;
+    text-align:right;
+    height:100%;
+    width:100%;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+}
+
+@media only screen and (max-width: 1440px){
+    .thevenue-grid-container-1{
+        grid-template-rows: 400px 400px;
+    }
+    .thevenue-grid-text-container .t1{
+        top:64px;
+        font-size:25.6px;
+    }
+    .thevenue-grid-text-container:after{
+        width: calc(100% - 136px);
+        top:115px;
+    }
+    .thevenue-grid-text-container .t2{
+        top:152px;
+        font-size:19px;
+        line-height: 32px;
+        padding: 0 57px; 
+    }
+    .thevenue-grid-text-container .button{
+        top:345px;
+        font-size: 13px;
+    }
+    .thevenue-grid-text-container-2{
+        position: relative;
+        background-color: #F0F1ED;
+    }
+    .thevenue-grid-text-container-2 .t3{
+        font-size:19px;
+        line-height: 32px;
+        padding: 0 46px; 
+    }
+    .thevenue-grid-container-3{ 
+        grid-template-rows: 432px 628px;
+    }
+
+    .thevenue-grid-text-container-t3 .t3{
+        font-size:19px;
+        line-height: 32px;
+        padding: 0 24px;
+    }
+    .thevenue-grid-text-container-t3 .button{
+        top: 370px;
+    }
+    .thevenue-grid-text-container-t3 .t3:nth-child(1){
+        margin-bottom: 20px;
+    }
+
+
+
+    .thevenue-flex{
+        grid-template-rows:432px;
+    }
+    .thevenue-grid-text-container-3 .t1{
+        top:73px; 
+        font-size:25.6px;
+    }
+    .thevenue-grid-text-container-3 .t2{
+        top:157px; 
+        font-size:19px;
+        padding: 0 145px; 
+    }
+    .thevenue-grid-text-container-3 .t3-container{
+        top:270px;
+    }
+    .thevenue-grid-text-container-3 .t3-container img{
+        width: 16px;
+        margin-right: 10px;
+    }
+    .thevenue-grid-text-container-3 .t3-container .t3{
+        font-size:19px;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .thevenue-grid-container-1{
+        grid-template-rows: 300px 300px;
+    }
+    .thevenue-grid-text-container .t1{
+        top:50px;
+        font-size:19.2px;
+    }
+    .thevenue-grid-text-container:after{
+        width: calc(100% - 100px);
+        top:86px;
+    }
+    .thevenue-grid-text-container .t2{
+        top:115px;
+        font-size:14.2px;
+        line-height: 24px;
+        padding: 0 33px; 
+    }
+    .thevenue-grid-text-container .button{
+        top:265px;
+        font-size: 9.7px;
+    }
+    .thevenue-grid-text-container-2 .t3{
+        font-size:14.2px;
+        line-height: 24px;
+        padding: 0 26px; 
+    }
+    .thevenue-grid-container-3{ 
+        grid-template-rows: 350px 471px;
+    }
+
+    .thevenue-grid-text-container-t3 .t3{
+        font-size:14.2px;
+        line-height: 24px;
+        padding: 0 15px; 
+    }
+    .thevenue-grid-text-container-t3 .button{
+        top: 300px;
+        font-size: 9.7px;
+    }
+    .thevenue-grid-text-container-t3 .t3:nth-child(1){
+        margin-bottom: 18px;
+    }
+
+
+    .thevenue-flex{
+        grid-template-rows:324px;
+    }
+    .thevenue-grid-text-container-3 .t1{
+        top:50px; 
+        font-size:19.2px;
+    }
+    .thevenue-grid-text-container-3 .t2{
+        top:118px; 
+        font-size:14.2px;
+        padding: 0 105px; 
+    }
+    .thevenue-grid-text-container-3 .t3-container{
+        top:200px;
+    }
+    .thevenue-grid-text-container-3 .t3-container img{
+        width: 10.9px;
+        margin-right: 7px;
+    }
+    .thevenue-grid-text-container-3 .t3-container .t3{
+        font-size:14.2px;
+    }
+}
+@media only screen and (max-width: 425px){
+    .thevenue-grid-container-1{
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 422px 244px 328px;
+    }
+    .thevenue-grid-container-1{
+        
+        grid-template-rows: 422px 244px 328px;
+    }
+    .thevenue-grid-container-1-item2{
+        grid-row: 1 / 2;
+    }
+    .thevenue-grid-container-1-item1{
+        grid-row: 2 / 3;
+    }
+    .thevenue-grid-container-1-item3{
+        grid-row: 3 / 4;
+    }
+    .thevenue-grid-container-1-item4{
+        grid-row: 4 / 5;
+    }
+
+    .thevenue-grid-text-container .t1{
+        top:47px;
+        font-size:23.7px;
+    }
+    .thevenue-grid-text-container:after{
+        width: calc(100% - 54px);
+        top:86px;
+    }
+    .thevenue-grid-text-container .t2{
+        top:115px;
+        font-size:19.7px;
+        line-height: 24px;
+        padding: 0 33px; 
+    }
+    .thevenue-grid-text-container .button{
+        top:372px;
+        font-size: 20.5px;
+    }
+    .thevenue-grid-text-container-2 .t3{
+        font-size:19.7px;
+        line-height: 25px;
+        padding: 0 27px; 
+    }
+    .thevenue-grid-container-3{ 
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: 244px 560px 330px 360px;
+    }
+
+    .thevenue-grid-text-container-t3 .t3{
+        font-size:19.3px;
+        line-height: 24px;
+        padding: 0 15px; 
+    }
+    .thevenue-grid-text-container-t3 .button{
+        top: 492px;
+        font-size: 20.5px;
+    }
+    .thevenue-grid-text-container-t3 .t3:nth-child(1){ /******/
+        margin-bottom: 18px;
+    }
+    
+    .thevenue-flex{
+        grid-template-rows:493px 352px;
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .thevenue-grid-text-container-3 .t1{
+        top:66px; 
+        font-size:23.6px;
+    }
+    .thevenue-grid-text-container-3 .t2{
+        top:128px; 
+        font-size:19.7px;
+        padding: 0 85px; 
+    }
+    .thevenue-grid-text-container-3 .t3-container{
+        top:250px;
+    }
+    .thevenue-grid-text-container-3 .t3-container img{
+        width: 15.2px;
+        margin-right: 7px;
+    }
+    .thevenue-grid-text-container-3 .t3-container .t3{
+        font-size:19.9px;
+    }
+}
+@media only screen and (max-width: 375px){
+    .thevenue-grid-text-container .t2{
+        top:115px;
+        font-size:16px;
+        line-height: 24px;
+        padding: 0 33px; 
+    }
+    .thevenue-grid-text-container-t3 .t3{
+        font-size:18px;
+        line-height: 24px;
+        padding: 0 15px; 
+    }
+}
+@media only screen and (max-width: 320px){
+    .thevenue-grid-text-container .t2{
+        top:115px;
+        font-size:16px;
+        line-height: 22px;
+        padding: 0 15px; 
+    }
+    .thevenue-grid-text-container-t3 .t3{
+        font-size:15px;
+        padding: 0 10px; 
+    }
+    .thevenue-grid-text-container-3 .t1{
+        font-size:20.6px;
+    }
+}
